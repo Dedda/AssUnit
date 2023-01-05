@@ -1,2 +1,2 @@
-libassunit.so
+libassunit.a
 *.o

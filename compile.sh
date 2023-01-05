@@ -2,7 +2,7 @@
 set -e
 
 source_files=( assunit )
-linker_command="ld -shared -o libassunit.so"
+linker_command="ar rs libassunit.a"
 
 for source_file in "${source_files[@]}"
 do
@@ -15,4 +15,4 @@ $($linker_command)
 
 rm *.o
 
-ls -lh libassunit.so
+ls -lh libassunit.a
